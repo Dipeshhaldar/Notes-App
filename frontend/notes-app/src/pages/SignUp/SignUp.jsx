@@ -35,7 +35,7 @@ const SignUp = () => {
 
     //sign up API call
     try {
-      const response = await axiosInstance.post("/create-account", {
+      const response = await axiosInstance.post("https://notes-app-pi-rust.vercel.app/signup", {
         fullName: name,
         email: email,
         password: password,
