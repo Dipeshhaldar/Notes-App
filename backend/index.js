@@ -25,7 +25,7 @@ const { authenticateToken } = require("./utilities");
 app.use(express.json());
 
 app.use(cors({
-  origin: ["https://dipeshhaldar.vercel.app"],
+  origin: ["https://notes-app-adeeb.vercel.app/login"],
   methods: ["POST", "GET"],
   credentials: true
 }));
