@@ -25,7 +25,7 @@ const { authenticateToken } = require("./utilities");
 app.use(express.json());
 
 app.use(cors({
-  origin: ["https://notes-app-adeeb.vercel.app/login"],
+  origin: ["https://notes-app-pi-rust.vercel.app"],
   methods: ["POST", "GET"],
   credentials: true
 }));
