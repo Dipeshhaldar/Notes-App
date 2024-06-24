@@ -26,8 +26,9 @@ app.use(express.json());
 
 app.use(cors({
   origin: ["https://notes-app-pi-rust.vercel.app"],
-  methods: ["POST", "GET"],
-  credentials: true
+  methods: ["POST", "GET", "PUT", "GET", "DELETE", "OPTIONS"],
+  credentials: true,
+  allowedHeaders: 'Content-Type,Authorization'
 }));
 
 app.get("/", (req, res, next) => {
