@@ -28,7 +28,7 @@ const LogIn = () => {
     setError("");
     //log in API call
     try {
-      const response = await axiosInstance.post("https://notes-app-pi-rust.vercel.app/login", {
+      const response = await axiosInstance.post("https://notes-app-backend-woad.vercel.app/login", {
         email: email,
         password: password,
       });
