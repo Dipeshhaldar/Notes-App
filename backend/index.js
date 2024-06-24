@@ -30,12 +30,12 @@ app.use(cors({
   credentials: true
 }));
 
-app.get("/", (req, res) => {
+app.get("/", (req, res, next) => {
   res.json({ data: "hello" });
 });
 
 //create account
-app.post("/create-account", async (req, res) => {
+app.post("/create-account", async (req, res, next) => {
   const { fullName, email, password } = req.body;
 
   if (!fullName) {
